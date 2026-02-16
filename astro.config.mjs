@@ -3,7 +3,6 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-	site: 'https://echa-wew.github.io',
-	base: '/pancakarsa-blog',
+	site: 'https://pancakarsa.my.id',
 	integrations: [mdx(), sitemap()],
 });
