@@ -2,7 +2,7 @@
 title: 'Memulai Pancakarsa'
 description: 'Kenapa saya akhirnya memutuskan untuk mulai menulis dan membuat ruang ini.'
 pubDate: 2026-02-16
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Sudah lama saya berpikir untuk punya ruang tulisan sendiri. Bukan karena ingin terkenal. Bukan karena ada agenda tertentu. Tapi karena ada hal-hal yang perlu dikeluarkan dari kepala — dan mungkin ada yang bisa mengambil manfaat dari sana.
