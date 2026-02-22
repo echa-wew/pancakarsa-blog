@@ -3,6 +3,8 @@ title: 'Sakit apakah ini'
 description: 'Mengalami kendala yang sangat aneh sakit yang bercampur aduk, seperti saat terkena covid delta tp berbeda dikit. Sudah hampir 2 minggu ini.'
 pubDate: 2026-02-22
 heroImage: '../../assets/sakit-apakah-ini.jpg'
+category: 'cerita'
+tags: ['meta', 'curahan']
 ---
 Dimulai pada tanggal 6 Februari 2026, ketika anak pulang dari camping sekolah nya mengalami demam seperti biasa mungkin karena kelelahan. Tetapi ada yang aneh seperti timbul gejala seperti gatal, lalu kami ke dokter dan mendapatkan informasi bahwa ini gejala virus dan akan muncul pada hari ke-tiga. Ternyata betul muncul gejala gatal semacam biduran tetapi berbeda, saya mengalami meriang di tanggal 9 Februari 2026 awalnya seperti meriang masuk angin tetapi merambat ke badan pegal linu dan lemas, kemudian kepala sakit seperti ditusuk-tusuk, batuk dan pilek kemudian mulut terasa pahit dan tidak enak, semua terasa seperti gejala covid delta sebelumnya tetapi tanpa hilang penciuman. 
 
