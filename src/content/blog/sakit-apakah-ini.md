@@ -1,5 +1,5 @@
 ---
-title: 'Sakit apakah ini ?'
+title: 'Sakit apakah ini'
 description: 'Mengalami kendala yang sangat aneh sakit yang bercampur aduk, seperti saat terkena covid delta tp berbeda dikit. Sudah hampir 2 minggu ini.'
 pubDate: 2026-02-22
 heroImage: '../../assets/sakit-apakah-ini.jpg'
