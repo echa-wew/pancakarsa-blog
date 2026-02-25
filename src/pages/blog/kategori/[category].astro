@@ -8,7 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
-	const categories = ['teknologi', 'pengalaman', 'pemikiran', 'engineering', 'cerita', 'tipsntrik'];
+	const categories = ['teknologi', 'pengalaman', 'pemikiran', 'engineering', 'cerita'];
 	
 	return categories.map((category) => ({
 		params: { category },
@@ -29,7 +29,6 @@ const categoryNames = {
 	pemikiran: 'Pemikiran',
 	engineering: 'Engineering',
 	cerita: 'Cerita',
-    tipsntrik: 'Tips & Trik',
 };
 ---
 
