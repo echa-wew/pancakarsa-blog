@@ -8,7 +8,16 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, category, tags } = Astro.props;
+
+const categoryNames = {
+	teknologi: 'Teknologi',
+	pengalaman: 'Pengalaman',
+	pemikiran: 'Pemikiran',
+	engineering: 'Engineering',
+	cerita: 'Cerita',
+	tipsntrik: 'Tips & Trik',
+};
 ---
 
 <html lang="en">
@@ -52,6 +61,48 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			.metadata {
+				display: flex;
+				gap: 1em;
+				margin-top: 1em;
+				padding-top: 1em;
+				border-top: 1px solid rgb(var(--gray-light));
+				flex-wrap: wrap;
+			}
+			.category, .tags {
+				display: flex;
+				gap: 0.5em;
+				align-items: center;
+			}
+			.category span, .tags span {
+				font-weight: 600;
+				color: rgb(var(--gray-dark));
+			}
+			.category a {
+				background: rgb(var(--accent));
+				color: white;
+				padding: 0.25em 0.75em;
+				border-radius: 4px;
+				text-decoration: none;
+				font-size: 0.9em;
+				transition: opacity 0.2s;
+			}
+			.category a:hover {
+				opacity: 0.8;
+			}
+			.tag {
+				background: rgb(var(--gray-light));
+				color: rgb(var(--gray-dark));
+				padding: 0.25em 0.75em;
+				border-radius: 4px;
+				text-decoration: none;
+				font-size: 0.85em;
+				transition: background 0.2s;
+			}
+			.tag:hover {
+				background: rgb(var(--gray));
+				color: white;
+			}
 		</style>
 	</head>
 
@@ -76,6 +127,24 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						</div>
 						<h1>{title}</h1>
 						<hr />
+						{(category || (tags && tags.length > 0)) && (
+							<div class="metadata">
+								{category && (
+									<div class="category">
+										<span>Kategori:</span>
+										<a href={`/blog/kategori/${category}/`}>{categoryNames[category]}</a>
+									</div>
+								)}
+								{tags && tags.length > 0 && (
+									<div class="tags">
+										<span>Tags:</span>
+										{tags.map((tag) => (
+											<a href={`/blog/tag/${tag}/`} class="tag">#{tag}</a>
+										))}
+									</div>
+								)}
+							</div>
+						)}
 					</div>
 					<slot />
 				</div>
