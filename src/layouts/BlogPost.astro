@@ -128,20 +128,16 @@ const categoryNames = {
 						<h1>{title}</h1>
 						<hr />
 						<div class="metadata">
-	                        {category && (
-		                        <div class="category">
-			                        <span>Kategori:</span>
-		                        	<a href={`/blog/kategori/${category}/`}>{categoryNames[category]}</a>
-	                        	</div>
-	                        )}
-	                        {tags && tags.length > 0 && (
-		                        <div class="tags">
-			                        <span>Tags:</span>
-			                        {tags.map((tag) => (
-				                        <a href={`/blog/tag/${tag}/`} class="tag">#{tag}</a>
-			                        ))}
-		                        </div>
-	                        )}
+	                        <div class="category">
+		                        <span>Kategori:</span>
+		                        <a href={`/blog/kategori/${category}/`}>{categoryNames[category]}</a>
+	                        </div>
+	                        <div class="tags">
+		                        <span>Tags:</span>
+		                        {tags.map((tag) => (
+			                        <a href={`/blog/tag/${tag}/`} class="tag">#{tag}</a>
+		                        ))}
+	                        </div>
                         </div>
 					</div>
 					<slot />
