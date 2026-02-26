@@ -78,13 +78,17 @@ const categoryNames = {
 				color: rgb(var(--gray-dark));
 			}
 			.category a {
-				background: rgb(var(--accent));
+	    		background: #2563eb;  /* Blue - explicit */
 				color: white;
 				padding: 0.25em 0.75em;
 				border-radius: 4px;
 				text-decoration: none;
 				font-size: 0.9em;
-				transition: opacity 0.2s;
+				font-weight: 600;
+				transition: background 0.2s;
+			}
+			.category a:hover {
+				background: #1d4ed8;
 			}
 			.category a:hover {
 				opacity: 0.8;
