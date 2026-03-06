@@ -1,7 +1,7 @@
 ---
 title: 'Ramadhan Hari ke-1'
 description: 'Awal Pengampunan dan Harapan Baru'
-pubDate: 2026-03-04
+pubDate: 2026-02-20
 heroImage: '../../assets/ramadhan-ke-1.jpg'
 category: 'pengalaman'
 tags: ['puasa', 'ramadhan', 'makna', ‘keutamaan’]
