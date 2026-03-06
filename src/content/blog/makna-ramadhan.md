@@ -1,7 +1,7 @@
 ---
 title: 'Makna Ramadhan'
 description: 'Makna Ramadhan Bulan Kembali kepada Allah SWT untuk meningkatkan ibadah wajib dan sunah'
-pubDate: 2026-03-04
+pubDate: 2026-02-19
 heroImage: '../../assets/makna-ramadhan.jpg'
 category: 'pengalaman'
 tags: ['makna', 'puasa', 'ramadhan']
