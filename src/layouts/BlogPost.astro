@@ -5,10 +5,14 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { getReadingTime } from '../utils/readingTime';
 
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, category, tags } = Astro.props;
+// Get reading time from slot content
+const { Content } = await Astro.slots.render('default');
+const readingTime = getReadingTime(Content || '');
 
 const categoryNames = {
 	teknologi: 'Teknologi',
@@ -102,6 +106,11 @@ const categoryNames = {
 				background: rgb(var(--gray));
 				color: white;
 			}
+			.reading-time {
+				margin-top: 0.5em;
+				color: rgb(var(--gray));
+				font-size: 0.9em;
+			}
 		</style>
 	</head>
 
@@ -123,6 +132,9 @@ const categoryNames = {
 									</div>
 								)
 							}
+						</div>
+						<div class="reading-time">
+							{readingTime} baca
 						</div>
 
 						<h1>{title}</h1>
