@@ -158,7 +158,7 @@ const categoryNames = {
 						</div>
 					</div>
 					<slot />
-						{Astro.props.tags && <RelatedPosts currentPost={Astro.props} />}
+						{Astro.props.fullPost && <RelatedPosts currentPost={Astro.props.fullPost} />}
 				</div>
 			</article>
 		</main>
