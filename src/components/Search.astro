@@ -1,0 +1,39 @@
+---
+// Search component using Pagefind
+---
+
+<div class="search-wrapper">
+	<div id="search"></div>
+</div>
+
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet" />
+<script is:inline src="/_pagefind/pagefind-ui.js"></script>
+<script is:inline>
+	window.addEventListener('DOMContentLoaded', () => {
+		new PagefindUI({
+			element: '#search',
+			showImages: false,
+			showSubResults: true,
+			excerptLength: 15,
+			translations: {
+				placeholder: 'Cari artikel...',
+				clear_search: 'Hapus',
+				load_more: 'Muat lebih banyak',
+				search_label: 'Cari di blog ini',
+				filters_label: 'Filter',
+				zero_results: 'Tidak ada hasil untuk [SEARCH_TERM]',
+				many_results: '[COUNT] hasil untuk [SEARCH_TERM]',
+				one_result: '[COUNT] hasil untuk [SEARCH_TERM]',
+				alt_search: 'Tidak ada hasil untuk [SEARCH_TERM]. Menampilkan hasil untuk [DIFFERENT_TERM]',
+				search_suggestion: 'Tidak ada hasil untuk [SEARCH_TERM]. Coba salah satu pencarian berikut:',
+			},
+		});
+	});
+</script>
+
+<style>
+	.search-wrapper {
+		margin: 2rem 0;
+		max-width: 600px;
+	}
+</style>
