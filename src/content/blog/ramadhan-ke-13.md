@@ -1,5 +1,5 @@
 ---
-title: 'Ramadhan ke-13'
+title: 'Ramadhan Hari ke-13'
 description: 'Makna dan keutamaan yang terkandung pada puasa hari ke-13 Ramadhan.'
 pubDate: 2026-03-3
 heroImage: '../../assets/ramadhan-ke-13.jpg'
