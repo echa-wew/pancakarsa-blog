@@ -9,6 +9,10 @@ interface Props {
 }
 
 const { currentPost, limit = 3 } = Astro.props;
+// Skip related posts if current post has no tags
+if (!currentPost.data.tags || currentPost.data.tags.length === 0) {
+	return null;
+}
 
 // Get all posts except current
 const allPosts = (await getCollection('blog'))
@@ -17,8 +21,12 @@ const allPosts = (await getCollection('blog'))
 
 // Calculate similarity score based on shared tags
 const postsWithScore = allPosts.map((post) => {
-	const sharedTags = post.data.tags.filter((tag) => currentPost.data.tags.includes(tag));
-	const categoryMatch = post.data.category === currentPost.data.category ? 1 : 0;
+	//const sharedTags = post.data.tags.filter((tag) => currentPost.data.tags.includes(tag));
+	const currentTags = currentPost.data.tags || [];
+    const postTags = post.data.tags || [];
+    const sharedTags = postTags.filter((tag) => currentTags.includes(tag));
+    //const categoryMatch = post.data.category === currentPost.data.category ? 1 : 0;
+    const categoryMatch = (post.data.category && currentPost.data.category && post.data.category === currentPost.data.category) ? 1 : 0;
 	const score = sharedTags.length + categoryMatch;
 	return { post, score };
 });
