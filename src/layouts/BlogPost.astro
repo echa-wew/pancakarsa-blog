@@ -1,4 +1,5 @@
 ---
+import RelatedPosts from '../components/RelatedPosts.astro';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
@@ -157,6 +158,7 @@ const categoryNames = {
 						</div>
 					</div>
 					<slot />
+						<RelatedPosts currentPost={Astro.props} />
 				</div>
 			</article>
 		</main>
