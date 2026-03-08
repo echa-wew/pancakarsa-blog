@@ -1,5 +1,5 @@
 ---
-title: 'Ramadhan Hari ke-17l'
+title: 'Ramadhan Hari ke-17'
 description: 'Mengingat perjuangan dalam Islam'
 pubDate: 2026-03-08
 heroImage: '../../assets/ramadhan-ke-17.jpg'
