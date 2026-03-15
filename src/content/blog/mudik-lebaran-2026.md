@@ -1,5 +1,5 @@
 ---
-title: 'Mudik Lebaran 2026’
+title: 'Mudik Lebaran 2026'
 description: 'Perjalananku untuk mudik lebaran tahun 2026 bersama anak-anak, supaya bisa merasakan puasa di kampung halaman mengenang masa kecil dulu'
 pubDate: 2026-03-13
 heroImage: '../../assets/stasiun-gambir.jpg'
