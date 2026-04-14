@@ -1,0 +1,78 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="id">
+	<head>
+		<BaseHead title={`Contact - ${SITE_TITLE}`} description="Hubungi Pancakarsa" />
+		<style>
+			main {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 2em 1em;
+			}
+			.contact-info {
+				background: rgb(var(--gray-light));
+				padding: 2rem;
+				border-radius: 8px;
+				margin: 2rem 0;
+			}
+			.contact-info h2 {
+				margin-top: 0;
+			}
+			.contact-item {
+				margin: 1.5rem 0;
+			}
+			.contact-item strong {
+				display: block;
+				margin-bottom: 0.5rem;
+				color: rgb(var(--accent));
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Contact Us</h1>
+			
+			<p>Memiliki pertanyaan, saran, atau ingin berkolaborasi? Kami senang mendengar dari Anda!</p>
+
+			<div class="contact-info">
+				<h2>Hubungi Kami</h2>
+				
+				<div class="contact-item">
+					<strong>Email</strong>
+					<p><a href="mailto:raden@pancakarsa.my.id">raden@pancakarsa.my.id</a></p>
+				</div>
+
+				<div class="contact-item">
+					<strong>Social Media</strong>
+					<p>
+						Twitter/X: <a href="https://x.com/ekapraspanca" target="_blank">@ekapraspanca</a><br>
+						Instagram: <a href="https://www.instagram.com/radenekapras/" target="_blank">@radenekapras</a><br>
+						GitHub: <a href="https://github.com/echa-wew" target="_blank">echa-wew</a>
+					</p>
+				</div>
+
+				<div class="contact-item">
+					<strong>Waktu Respons</strong>
+					<p>Kami akan merespons email Anda dalam 2-3 hari kerja.</p>
+				</div>
+			</div>
+
+			<h2>Topik yang Kami Bahas</h2>
+			<ul>
+				<li>Pertanyaan tentang artikel sejarah dan budaya</li>
+				<li>Koreksi atau tambahan informasi untuk artikel yang sudah dipublikasi</li>
+				<li>Kolaborasi konten atau guest post</li>
+				<li>Feedback dan saran untuk Pancakarsa</li>
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

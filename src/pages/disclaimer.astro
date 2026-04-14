@@ -1,0 +1,60 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="id">
+	<head>
+		<BaseHead title={`Disclaimer - ${SITE_TITLE}`} description="Disclaimer Pancakarsa" />
+		<style>
+			main {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 2em 1em;
+			}
+			.prose {
+				line-height: 1.8;
+			}
+			.prose h2 {
+				margin-top: 2em;
+				margin-bottom: 1em;
+			}
+			.prose p {
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Disclaimer</h1>
+			
+			<div class="prose">
+				<h2>Tentang Konten</h2>
+				<p>Konten yang disajikan di Pancakarsa merupakan hasil riset dan interpretasi penulis terhadap berbagai sumber sejarah dan budaya. Meskipun kami berusaha menyajikan informasi yang akurat dan berimbang, kami tidak mengklaim bahwa konten ini adalah kebenaran akademis mutlak.</p>
+
+				<h2>Sumber dan Referensi</h2>
+				<p>Pancakarsa menggunakan berbagai sumber terpercaya termasuk buku akademis, jurnal, dan publikasi resmi. Penggunaan sumber-sumber tersebut bukan merupakan endorsement resmi dari institusi terkait. Setiap artikel mencantumkan referensi yang digunakan untuk transparansi.</p>
+
+				<h2>Hak Cipta</h2>
+				<p>Seluruh konten original yang dipublikasikan di Pancakarsa, termasuk teks, gambar, dan infografis yang dibuat sendiri, dilindungi hak cipta dan merupakan properti Pancakarsa kecuali disebutkan lain.</p>
+
+				<h2>Tidak Ada Conflict of Interest</h2>
+				<p>Pancakarsa beroperasi secara independen. Kami tidak memiliki afiliasi politik, agama, atau komersial yang memengaruhi objektifitas konten kami.</p>
+
+				<h2>Opini Penulis</h2>
+				<p>Analisis, interpretasi, dan opini yang disampaikan dalam artikel merupakan pandangan penulis berdasarkan riset yang dilakukan, bukan pernyataan fakta yang tidak dapat dibantah.</p>
+
+				<h2>Perubahan Disclaimer</h2>
+				<p>Pancakarsa berhak mengubah disclaimer ini sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini dengan tanggal "Last Updated" yang diperbarui.</p>
+
+				<p><strong>Last Updated:</strong> {new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
